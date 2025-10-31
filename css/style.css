@@ -1,0 +1,33 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.todo-item {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+body.light-mode {
+  background: linear-gradient(to bottom right, #e0f0ff, #ffffff);
+  color: #1a202c;
+}
+
+body.light-mode #card-body {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1a202c;
+}
+
+body.light-mode input,
+body.light-mode select {
+  background-color: #e6f2ff;
+  color: #1a202c;
+}
+
+body.light-mode table thead tr {
+  color: #2563eb;
+}
+
+tr:hover {
+  transform: scale(1.01);
+  transition: transform 0.15s ease-in-out;
+}
